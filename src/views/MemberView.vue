@@ -6,7 +6,9 @@
 				   color_first="#000"
 				   color_second="#2e34d3" />
 
-		<button @click="change">切换</button>
+		<div class="buttonBx" @click="change">
+			<img :src="buttonImg" alt="">
+		</div>
 
 		<div class="member">
 			<template v-for="(memberGroup, index) in allMember" :key="index">
@@ -33,6 +35,7 @@
 	import frostedGlass from '@/components/frosted-glass.vue'
 
 	let titleImg = new URL('@/assets/decoration/title_blue.png', import.meta.url).href
+	let buttonImg = new URL('@/assets/decoration/button.png', import.meta.url).href
 
 	let memberGroups = ref()
 
@@ -87,9 +90,26 @@
 		padding-top: 30px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-content: space-evenly;
 		align-items: center;
+	}
+}
+
+.buttonBx {
+	width: 200px;
+	height: 200px;
+	margin: 20px auto 0;
+	transition: .7s;
+
+	&:hover {
+		cursor: pointer;
+		transform: rotate(180deg);
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -105,7 +125,7 @@ section {
 		position: absolute;
 	}
 
-	width: 330px;
+	width: 270px;
 	height: 500px;
 
 }

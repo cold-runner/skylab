@@ -50,7 +50,7 @@
 
 <style scoped lang="scss">
 .card {
-	width: 330px;
+	width: 270px;
 	height: 500px;
 	overflow: hidden;
 	border-radius: 15px;
@@ -68,9 +68,11 @@
 		padding: 40px 20px 0 20px;
 	}
 
+	$side_length: 120px;
+
 	.imgBx {
-		width: 150px;
-		height: 150px;
+		width: $side_length;
+		height: $side_length;
 		margin: auto;
 		overflow: hidden;
 		border-radius: 50%;

@@ -30,7 +30,8 @@ enum Grade {
   CLASS_OF_2020 = '2020',
   CLASS_OF_2021 = '2021',
   CLASS_OF_2022 = '2022',
-  CLASS_OF_2023 = '2023'
+  CLASS_OF_2023 = '2023',
+  CLASS_OF_2024 = '2024'
 }
 
 const members_2017: Member[] = [
@@ -259,26 +260,33 @@ const members_2021: Member[] = [
 ]
 
 const members_2022: Member[] = [
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', '')
+  new Member(
+    Grade.CLASS_OF_2022,
+    Major.CS,
+    new URL('@/assets/member/张瀚聪.jpg', import.meta.url).href,
+    '张瀚聪',
+    '曾获第十四届蓝桥杯省级一等奖、“互联网+”省级二等奖、校级优秀团员、社会实践先进个人等省、校、院级奖项共计二十余项。现任职软件学院第二十届团学组织学生会执行主席。感谢sky的包容与开放，给予每个灵魂滚烫发光的机会。'
+  ),
+  new Member(
+    Grade.CLASS_OF_2022,
+    Major.CS,
+    new URL('@/assets/member/孙治宇.jpg', import.meta.url).href,
+    '孙治宇',
+    '曾获得大学生创新创业比赛国家级奖项，计算机设计大赛省奖，互联网+银奖铜奖，挑战杯校级，传智杯优秀奖，大一曾获得学习奖学金，并通过了英语的四六级，爱好篮球足球和kpop。人生就是旷野，旷野的规则是永不回头，所以继续勇敢地向前走吧。'
+  )
 ]
 
 const members_2023: Member[] = [
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', ''),
-  new Member('', '', '', '', '')
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.NE,
+    new URL('@/assets/member/宋瑞涵.jpg', import.meta.url).href,
+    '宋瑞涵',
+    '目前获得蓝桥杯省三奖项，大创校级奖，日常热情开朗，有点抽象，喜欢打羽毛球，希望在sky度过难忘的岁月！'
+  )
 ]
+
+const members_2024: Member[] = [new Member('', '', '', '', '')]
 
 const allMember: Member[][] = [
   members_2017,
@@ -287,7 +295,8 @@ const allMember: Member[][] = [
   members_2020,
   members_2021,
   members_2022,
-  members_2023
+  members_2023,
+  members_2024
 ]
 
 export { Member, Grade, Major, allMember }
