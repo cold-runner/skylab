@@ -144,7 +144,11 @@ p {
 		border-radius: 40px;
 		background-color: #fff;
 		box-shadow: 1px 1px 10px #bababa;
+		transition: all 0.3s;
 
+		&:hover {
+			box-shadow: 1px 1px 10px black;
+		}
 
 		h1 {
 			padding: 15px;
