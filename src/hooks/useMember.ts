@@ -249,14 +249,14 @@ const members_2021: Member[] = [
     new URL('@/assets/member/秦梓轩.jpg', import.meta.url).href,
     '秦梓轩',
     '大家好，我是21级来自计算机科学与技术专业12班的闫正心，本人性格开朗，热情活泼，喜欢画画，旅游和做一些手工。我很荣幸加入了skylab成为了一名skyer，在这一年里我学习到了很多专业知识，也有了自己的学习方向，收获颇丰，积累了很多经验。“星光不问赶路人,时光不负有心人”我会一直努力向前。期待大家加入skylab，成为我们的一员！'
-  ),
-  new Member(
-    Grade.CLASS_OF_2021,
-    Major.CS,
-    new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
-    '李俊奕',
-    ''
   )
+  //   new Member(
+  //     Grade.CLASS_OF_2021,
+  //     Major.CS,
+  //     new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
+  //     '李俊奕',
+  //     ''
+  //   )
 ]
 
 const members_2022: Member[] = [
