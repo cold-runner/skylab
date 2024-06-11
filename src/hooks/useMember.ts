@@ -133,7 +133,7 @@ const members_2020: Member[] = [
     Major.MATH_NORMAL,
     new URL('@/assets/member/王书琳.png', import.meta.url).href,
     '王书琳',
-    'sky2020级成员王书琳，原软件学院计算机科学与技术（师范）专业学生，平均学分绩点3.52，智育、综测均专业第一。曾担任软件学院21级新生助理辅导员。大二转入数学学应用数学（师范）专业，智育排名前4%,获省级奖项四项，校级五余项。乐衷于参加大学数学建模竞赛及创新创业类竞赛，多次取得省、校级奖项，现已保研至东北师范大学。'
+    '原软件学院计算机科学与技术（师范）专业学生，平均学分绩点3.52，智育、综测均专业第一。曾任软件学院21级新生助理辅导员。大二转入数学学应用数学（师范）专业，智育排名前4%,获省级奖项四项，校级五余项。乐衷于参加大学数学建模竞赛及创新创业类竞赛，多次取得省、校级奖项，现已保研至东北师范大学。'
   ),
   new Member(
     Grade.CLASS_OF_2020,
@@ -248,7 +248,7 @@ const members_2021: Member[] = [
     Major.CS,
     new URL('@/assets/member/秦梓轩.jpg', import.meta.url).href,
     '秦梓轩',
-    '大家好，我是21级来自计算机科学与技术专业12班的闫正心，本人性格开朗，热情活泼，喜欢画画，旅游和做一些手工。我很荣幸加入了skylab成为了一名skyer，在这一年里我学习到了很多专业知识，也有了自己的学习方向，收获颇丰，积累了很多经验。“星光不问赶路人,时光不负有心人”我会一直努力向前。期待大家加入skylab，成为我们的一员！'
+    '来自沈阳，性格开朗，幽默，曾获《第四届传智杯全国大学生IT技能大赛全国区域赛三等奖》 《互联网+校级铜奖》等奖项；我喜欢健身，打篮球，打游戏；期待大家加入skylab，彼此共同进步！'
   )
   //   new Member(
   //     Grade.CLASS_OF_2021,
@@ -273,6 +273,13 @@ const members_2022: Member[] = [
     new URL('@/assets/member/孙治宇.jpg', import.meta.url).href,
     '孙治宇',
     '曾获得大学生创新创业比赛国家级奖项，计算机设计大赛省奖，互联网+银奖铜奖，挑战杯校级，传智杯优秀奖，大一曾获得学习奖学金，并通过了英语的四六级，爱好篮球足球和kpop。人生就是旷野，旷野的规则是永不回头，所以继续勇敢地向前走吧。'
+  ),
+  new Member(
+    Grade.CLASS_OF_2022,
+    Major.NE,
+    new URL('@/assets/member/彭思齐.jpg', import.meta.url).href,
+    '彭思齐',
+    '23辽宁省数学建模竞赛省级一等奖、23年美赛s奖、24年蓝桥杯c++组省级二等奖、24年东三省数学建模竞赛省级二等奖、24年三创赛校级二等奖。个人技术主攻前端方向，兴趣爱好涉猎广泛，喜爱音乐，在网易云平台上有beat发行。喜好运动，如篮球，跑步等。个人座右铭:落彩赋寒川，翻山逐暖阳。'
   )
 ]
 
@@ -283,10 +290,56 @@ const members_2023: Member[] = [
     new URL('@/assets/member/宋瑞涵.jpg', import.meta.url).href,
     '宋瑞涵',
     '目前获得蓝桥杯省三奖项，大创校级奖，日常热情开朗，有点抽象，喜欢打羽毛球，希望在sky度过难忘的岁月！'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.CS,
+    new URL('@/assets/member/周晓涵.jpg', import.meta.url).href,
+    '周晓涵',
+    '目前获得大创校级奖，海报校级一等奖，校园心理情景剧二等奖，性格开朗大方，希望学弟学妹们可以在工作室不断学习，努力提高 ，超越自己 ，成就梦想'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.CS,
+    new URL('@/assets/member/苑文浩.jpg', import.meta.url).href,
+    '苑文浩',
+    '个人荣誉：23年创新创业大赛省级三等奖、23年创新创业大赛校级三等奖、24年“21世纪杯”英语演讲校级一等奖。希望新生们抓住机会，筚路蓝缕·栉风沐雨，做自己想做的，花香蝶自来。'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.CS,
+    new URL('@/assets/member/于佳禾.jpg', import.meta.url).href,
+    '于佳禾',
+    '个人荣誉：2023年辽宁省大学生体育+创新创业大赛省级三等奖、2024年大学生创新创业校奖；喜欢写书法、弹古筝、旅行……希望在sky这个大家庭和大家共同学习进步，收获、成长，度过美好充实的大学时光！山高路远，道阻且长，行则将至！'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.CS,
+    new URL('@/assets/member/胡安媛.jpg', import.meta.url).href,
+    '胡安媛',
+    '个人荣誉:24年东北三省数学建模省级二等奖；24年大学生创新创业校级立项；23年第六届传智杯比赛校级三等奖；祝你明亮，任由阳光盈满，祝你道路悠长，得见旷野繁星，长街灯光。'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.NE,
+    new URL('@/assets/member/崔心甜.jpg', import.meta.url).href,
+    '崔心甜',
+    '个人荣誉：蓝桥杯省二奖项、大创校级。喜欢听歌追剧，期望与大家共谱绚丽篇章，留下美好回忆！'
+  ),
+  new Member(
+    Grade.CLASS_OF_2023,
+    Major.CS,
+    new URL('@/assets/member/张智涵.jpg', import.meta.url).href,
+    '张智涵',
+    '计科三班班长，获蓝桥杯省二，23年第六届传智杯比赛校级三等奖，三创赛校二，对FPS游戏、小说、历史都有浓厚的兴趣，喜欢旅游，想在读万卷书的同时行万里路，努力丰富自己，会在帮助别人的同时获得快乐，坚信文字具有力量，会经常记录生活！希望学弟学妹能加入我们Sky这个大家庭，成为一个新的skyer！'
   )
 ]
 
-const members_2024: Member[] = [new Member('', '', '', '', '')]
+const members_2024: Member[] = [
+  new Member('', '', '', '', ''),
+  new Member('', '', '', '', ''),
+  new Member('', '', '', '', '')
+]
 
 const allMember: Member[][] = [
   members_2017,

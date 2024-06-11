@@ -1,25 +1,28 @@
 <script setup lang="ts">
+	import { ref } from 'vue'
+	let i = ref(0)
 </script>
 
 <template>
-	<div class="box1">
-		<div class="left">
-			<div class="little-star star-0-ud">
-				<img src="@/assets/decoration/A4.png" alt="" title="" style="">
+	<main>
+		<div class="box1">
+			<div class="left">
+				<div class="little-star star-0-ud">
+					<img src="@/assets/decoration/A4.png" alt="" title="" style="">
+				</div>
+				<h1>这是我们的工作室</h1>
+				<p>
+					具有18年历史，拥有教学丰富、完善的培养机制，专业老师带领，对学生进行阶梯式培养让人欲罢不能的自学模式，颠覆你的想象。
+				</p>
+				<p>
+					这里卧虎藏龙，充满着青春和自律的的味道。独立的学习空间，让你的学习更有效率，工作室拥有百兆宽带，晚自习在工作室进行，可以使用电脑，学习更广泛。
+				</p>
 			</div>
-			<h1>这是我们的工作室</h1>
-			<p>
-				具有18年历史，拥有教学丰富、完善的培养机制，专业老师带领，对学生进行阶梯式培养让人欲罢不能的自学模式，颠覆你的想象。
-			</p>
-			<p>
-				这里卧虎藏龙，充满着青春和自律的的味道。独立的学习空间，让你的学习更有效率，工作室拥有百兆宽带，晚自习在工作室进行，可以使用电脑，学习更广泛。
-			</p>
+			<div class="right">
+				<img src="@/assets/other/gzs.jpg" alt="" />
+			</div>
 		</div>
-		<div class="right">
-			<img src="@/assets/other/gzs.jpg" alt="" />
-		</div>
-	</div>
-	<!--<div class="box2">
+		<!--<div class="box2">
 		<div class="yellow-bar"></div>
 		<div class="decoration">
 			<img src="@/assets/decoration/A4-a.png" alt="" class="star-1-ud">
@@ -29,7 +32,7 @@
 		</div>
 
 	</div>-->
-	<!--<div class="bottom">
+		<!--<div class="bottom">
 		<div class="study-card" style="width: 390px">
 			<h1>这是我们的传承活动</h1>
 			<p>
@@ -43,86 +46,87 @@
 			<div><img src="@/assets/other/tl.jpg" alt="" /></div>
 		</div>
 	</div>-->
-	<div class="box3">
-	</div>
-	<div class="box4">
-		<!-- 前端介绍 -->
-		<div class="frontend">
-			<div class="tech-logo" style="margin-right: 75px">
-				<div class="h5-spin">
-					<img src="@/assets/other/h5.png" alt="" />
+		<div class="box3">
+		</div>
+		<div class="box4">
+			<!-- 前端介绍 -->
+			<div class="frontend">
+				<div class="tech-logo" style="margin-right: 75px">
+					<div class="h5-spin">
+						<img src="@/assets/other/h5.png" alt="" />
+					</div>
+					<div class="css-spin">
+						<img src="@/assets/other/css.png" alt="" />
+					</div>
+					<div class="js-spin">
+						<img src="@/assets/other/javascript.png" alt="" />
+					</div>
+					<div class="vue-spin">
+						<img src="@/assets/other/vue.png" alt="" />
+					</div>
+					<div class="react-roll">
+						<img src="@/assets/other/react.png" alt="" />
+					</div>
+					<div class="webpack-roll">
+						<img src="@/assets/other/webpack.png" alt="" />
+					</div>
 				</div>
-				<div class="css-spin">
-					<img src="@/assets/other/css.png" alt="" />
-				</div>
-				<div class="js-spin">
-					<img src="@/assets/other/javascript.png" alt="" />
-				</div>
-				<div class="vue-spin">
-					<img src="@/assets/other/vue.png" alt="" />
-				</div>
-				<div class="react-roll">
-					<img src="@/assets/other/react.png" alt="" />
-				</div>
-				<div class="webpack-roll">
-					<img src="@/assets/other/webpack.png" alt="" />
+				<div class="study-card">
+					<img
+						 src="@/assets/decoration/A4.png"
+						 alt=""
+						 class="star-0 star-0-ud" />
+					<h1>在这里你能学到什么?</h1>
+					<p>
+						① 前端: 前端开发是创建Web页面或app等前端界面呈现给用户的过程，通过HTML,
+						CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。
+					</p>
 				</div>
 			</div>
-			<div class="study-card">
-				<img
-					 src="@/assets/decoration/A4.png"
-					 alt=""
-					 class="star-0 star-0-ud" />
-				<h1>在这里你能学到什么?</h1>
-				<p>
-					① 前端: 前端开发是创建Web页面或app等前端界面呈现给用户的过程，通过HTML,
-					CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。
-				</p>
+			<!-- 后端介绍 -->
+			<div class="backend">
+				<div class="study-card" style="margin-right: 75px">
+					<p>
+						② 后端:
+						后端负责处理用户数据和业务逻辑，包括服务器架设、操作数据库、在高并发场景中保证服务性能、保证服务安全性、集群管理等，需要开发者至少掌握一种高级语言，并掌握Linux、MySQL、Redis、Kafka、Nginx等技术的使用方法和底层原理。看不到但又被用来为前端提供支持的东西就是后端。
+					</p>
+				</div>
+				<div class="tech-logo">
+					<div><img src="@/assets/other/c.png" alt="" /></div>
+					<div>
+						<img src="@/assets/other/java.png" alt="" />
+					</div>
+					<div>
+						<img src="@/assets/other/go-zero.png" alt="" />
+					</div>
+					<div>
+						<img src="@/assets/other/python.png" alt="" />
+					</div>
+					<div>
+						<img src="@/assets/other/centos.png" alt="" />
+					</div>
+					<div>
+						<img src="@/assets/other/nginx.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- UI设计介绍 -->
+			<div class="ui" style="margin-bottom: 0px">
+				<div class="ui-pic">
+					<div><img src="@/assets/decoration/gz.png" alt="" /></div>
+					<div style="top: 350px; height: 500px">
+						<img src="@/assets/decoration/A2.png" alt="" />
+					</div>
+				</div>
+				<div class="study-card" style="height: 600px; margin-top: 100px">
+					<p>
+						③ UI设计：
+						我们身边的诸多事务都离不开UI，无论是我们浏览的APP、网站，还是现实生活中看到的广告海报，又或是游戏中的人物形象，形形色色的Logo。UI设计，即用户界面。负责使用户与产品间有机、高效地结合。好的UI设计不仅是让软件变得有个性有品位，还要让软件的操作变得舒适简单、自由。充分体现软件的定位和特点
+					</p>
+				</div>
 			</div>
 		</div>
-		<!-- 后端介绍 -->
-		<div class="backend">
-			<div class="study-card" style="margin-right: 75px">
-				<p>
-					② 后端:
-					后端负责处理用户数据和业务逻辑，包括服务器架设、操作数据库、在高并发场景中保证服务性能、保证服务安全性、集群管理等，需要开发者至少掌握一种高级语言，并掌握Linux、MySQL、Redis、Kafka、Nginx等技术的使用方法和底层原理。看不到但又被用来为前端提供支持的东西就是后端。
-				</p>
-			</div>
-			<div class="tech-logo">
-				<div><img src="@/assets/other/c.png" alt="" /></div>
-				<div>
-					<img src="@/assets/other/java.png" alt="" />
-				</div>
-				<div>
-					<img src="@/assets/other/go-zero.png" alt="" />
-				</div>
-				<div>
-					<img src="@/assets/other/python.png" alt="" />
-				</div>
-				<div>
-					<img src="@/assets/other/centos.png" alt="" />
-				</div>
-				<div>
-					<img src="@/assets/other/nginx.png" alt="" />
-				</div>
-			</div>
-		</div>
-		<!-- UI设计介绍 -->
-		<div class="ui" style="margin-bottom: 0px">
-			<div class="ui-pic">
-				<div><img src="@/assets/decoration/gz.png" alt="" /></div>
-				<div style="top: 350px; height: 500px">
-					<img src="@/assets/decoration/A2.png" alt="" />
-				</div>
-			</div>
-			<div class="study-card" style="height: 600px; margin-top: 100px">
-				<p>
-					③ UI设计：
-					我们身边的诸多事务都离不开UI，无论是我们浏览的APP、网站，还是现实生活中看到的广告海报，又或是游戏中的人物形象，形形色色的Logo。UI设计，即用户界面。负责使用户与产品间有机、高效地结合。好的UI设计不仅是让软件变得有个性有品位，还要让软件的操作变得舒适简单、自由。充分体现软件的定位和特点
-				</p>
-			</div>
-		</div>
-	</div>
+	</main>
 </template>
 
 <style scoped lang="scss">

@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<main>
 		<titleCard :src=titleImg
 				   chinese="成就"
 				   content="ACHIEVEMENT"
@@ -146,7 +146,7 @@
 		<img class="cloud-02-c4 absolute"
 			 src="@/assets/decoration/C4.png"
 			 alt="" />
-	</div>
+	</main>
 </template>
 
 <script setup lang="ts">
@@ -174,7 +174,7 @@
 	}
 }
 
-.container {
+main {
 	position: relative;
 	padding-top: 70px;
 }

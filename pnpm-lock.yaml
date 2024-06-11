@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      normalize.css:
-        specifier: ^8.0.1
-        version: 8.0.1
       vue:
         specifier: ^3.4.21
         version: 3.4.27(typescript@5.4.5)
@@ -45,6 +42,9 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.23.0
         version: 9.26.0(eslint@8.57.0)
+      normalize.css:
+        specifier: ^8.0.1
+        version: 8.0.1
       npm-run-all2:
         specifier: ^6.1.2
         version: 6.2.0

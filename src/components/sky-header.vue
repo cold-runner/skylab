@@ -1,39 +1,52 @@
 <template>
+	<header>
+		<div class="logo">
+			<img src="@/assets/decoration/LOGO.png" alt="sky-logo.png" />
+		</div>
 
-	<div class="logo">
-		<img src="@/assets/decoration/LOGO.png" alt="sky-logo.png" />
-	</div>
+		<span class="piece"></span>
 
-	<span class="piece"></span>
+		<nav>
+			<span class="right-line">
+				<RouterLink class="l" to="/">主页</RouterLink>
+			</span>
+			<span class="right-line">
+				<RouterLink class="b" to="/member">成员</RouterLink>
+			</span>
+			<span>
+				<RouterLink class="r" to="/achievement">荣誉</RouterLink>
+			</span>
+		</nav>
 
-	<nav>
-		<span class="right-line">
-			<RouterLink class="l" to="/">主页</RouterLink>
-		</span>
-		<span class="right-line">
-			<RouterLink class="b" to="/member">成员</RouterLink>
-		</span>
-		<span>
-			<RouterLink class="r" to="/achievement">荣誉</RouterLink>
-		</span>
-	</nav>
-
-	<div class="bottom-box">
-		<span>WELCOM</span>
-		<span>TO</span>
-		<span style="color: #fac830">JOIN</span>
-		<span>US</span>
-		<span class="box"></span>
-		<span class="long-box"></span>
-		<span class="box"></span>
-	</div>
-
+		<div class="bottom-box">
+			<span>WELCOM</span>
+			<span>TO</span>
+			<span style="color: #fac830">JOIN</span>
+			<span>US</span>
+			<span class="box"></span>
+			<span class="long-box"></span>
+			<span class="box"></span>
+		</div>
+	</header>
 </template>
 
 <script setup lang="ts">
 </script>
 
 <style scoped lang="scss">
+header {
+	font-size: 14px;
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
 .piece {
 	float: right;
 	width: 25px;

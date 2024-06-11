@@ -1,34 +1,32 @@
 <template>
-	<div class="container">
+	<main>
 		<titleCard :src=titleImg
 				   chinese="成员"
 				   content="MEMBER"
 				   color_first="#000"
 				   color_second="#2e34d3" />
 
-		<div class="buttonBx" @click="change">
+		<div class="buttonBx" @click="index++">
 			<img :src="buttonImg" alt="">
 		</div>
 
 		<div class="member">
-			<template v-for="(memberGroup, index) in allMember" :key="index">
-				<section ref="memberGroups">
-
-					<frostedGlass v-for="member in memberGroup" :key="member.avatar"
+			<section v-for="(memberGroup, index) in allMember" :key="index" ref="mgRefs">
+				<template v-for="member in memberGroup" :key="member.avatar">
+					<frostedGlass
 								  :avatar="member.avatar"
 								  :title_first="member.name"
 								  :title_second="member.grade + member.major"
 								  :content="member.introduction" />
-
-				</section>
-			</template>
+				</template>
+			</section>
 		</div>
-	</div>
+	</main>
 
 </template>
 
 <script setup lang="ts">
-	import { onMounted, ref } from 'vue'
+	import { ref, watch } from 'vue'
 	import { allMember } from '@/hooks/useMember'
 
 	import titleCard from '@/components/title-card.vue'
@@ -37,54 +35,25 @@
 	let titleImg = new URL('@/assets/decoration/title_blue.png', import.meta.url).href
 	let buttonImg = new URL('@/assets/decoration/button.png', import.meta.url).href
 
-	let memberGroups = ref()
+	let index = ref(0)
+	let mgRefs = ref<HTMLElement[]>([])
 
-	class MembersWithIndex {
-		member: HTMLElement[]
-		currIndex: number
+	watch(index, (newIndex, oldIndex) => {
+		for (let i = 0; i < allMember.length; i++) {
+			let section: HTMLElement = mgRefs.value[i]
+			let preCard: HTMLElement = section.children[oldIndex % section.childElementCount] as HTMLElement
+			let currCard: HTMLElement = section.children[newIndex % section.childElementCount] as HTMLElement
 
-		constructor(member: []) {
-			this.member = member
-			this.currIndex = 0
-		}
-	}
-
-	let membersWithIndex: MembersWithIndex[] = new Array()
-
-	onMounted(() => {
-		let mems = memberGroups.value
-		for (let idx in mems) {
-			membersWithIndex.push(new MembersWithIndex(mems[idx].children))
-			mems[idx].children[0].style.zIndex = '100'
+			preCard.style.opacity = '0', preCard.style.zIndex = '-1'
+			currCard.style.opacity = '1', currCard.style.zIndex = '1'
 		}
 	})
 
-	let change = () => {
-		for (let idx in membersWithIndex) {
-			let currMemberGroup = membersWithIndex[idx].member
-			let currIdx: number = membersWithIndex[idx].currIndex
-
-			currMemberGroup[currIdx].style.opacity = '0'
-			currMemberGroup[currIdx].style.zIndex = '-100'
-
-			currMemberGroup[(currIdx + 1) % currMemberGroup.length].style.opacity = '1'
-			currMemberGroup[(currIdx + 1) % currMemberGroup.length].style.zIndex = '100'
-
-			membersWithIndex[idx].currIndex = (currIdx + 1) % membersWithIndex[idx].member.length
-		}
-	}
 </script>
 
 <style scoped lang="scss">
-.container {
+main {
 	padding-top: 70px;
-
-	button {
-		margin: auto;
-		display: block;
-		width: 50px;
-		height: 50px;
-	}
 
 	.member {
 		padding-top: 30px;
@@ -104,7 +73,7 @@
 
 	&:hover {
 		cursor: pointer;
-		transform: rotate(180deg);
+		transform: rotate(360deg);
 	}
 
 	img {
@@ -119,6 +88,7 @@ section {
 
 	>*:nth-child(n+2) {
 		opacity: 0;
+		z-index: -1;
 	}
 
 	>* {

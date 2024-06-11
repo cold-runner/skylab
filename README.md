@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="320" src="doc/logo.png">
+  <img width="320" src="doc/LOGO.png">
 </p>
 
 # SkyLab
