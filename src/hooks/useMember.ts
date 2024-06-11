@@ -294,8 +294,8 @@ const members_2023: Member[] = [
   new Member(
     Grade.CLASS_OF_2023,
     Major.CS,
-    new URL('@/assets/member/周晓涵.jpg', import.meta.url).href,
-    '周晓涵',
+    new URL('@/assets/member/周晓函.jpg', import.meta.url).href,
+    '周晓函',
     '目前获得大创校级奖，海报校级一等奖，校园心理情景剧二等奖，性格开朗大方，希望学弟学妹们可以在工作室不断学习，努力提高 ，超越自己 ，成就梦想'
   ),
   new Member(
