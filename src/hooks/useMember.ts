@@ -250,13 +250,13 @@ const members_2021: Member[] = [
     '秦梓轩',
     '来自沈阳，性格开朗，幽默，曾获《第四届传智杯全国大学生IT技能大赛全国区域赛三等奖》 《互联网+校级铜奖》等奖项；我喜欢健身，打篮球，打游戏；期待大家加入skylab，彼此共同进步！'
   )
-  //   new Member(
-  //     Grade.CLASS_OF_2021,
-  //     Major.CS,
-  //     new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
-  //     '李俊奕',
-  //     ''
-  //   )
+    new Member(
+      Grade.CLASS_OF_2021,
+      Major.CS,
+      new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
+      '李俊奕',
+      '喜欢编程、游泳、健身、web3、FPS、动漫，一些莫名其妙比赛的获奖者，一些莫名其妙奖学金的获得者。'
+    )
 ]
 
 const members_2022: Member[] = [
