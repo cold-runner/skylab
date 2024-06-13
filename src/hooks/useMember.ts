@@ -255,7 +255,7 @@ const members_2021: Member[] = [
       Major.CS,
       new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
       '李俊奕',
-      '喜欢编程、游泳、健身、web3、FPS、动漫，一些莫名其妙比赛的获奖者，一些莫名其妙奖学金的获得者。'
+      '喜欢编程、游泳、健身、web3、FPS、动漫，一些莫名其妙奖学金的获得者，蓝桥杯、传智杯、全国大学生电子商务等一些莫名其妙比赛的获奖者。个人技术方向为go开发，对web3非常感兴趣。'
     )
 ]
 

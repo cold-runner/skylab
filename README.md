@@ -15,7 +15,7 @@ Website for SkyLab.
 
 The following are basic prerequisites for developing this project:
 
-- The npm command is installed locally. Get npm packages and other prerequisites:
+- The pnpm command is installed locally. Get pnpm packages and other prerequisites:
 
 ```bash
 # install dependency
