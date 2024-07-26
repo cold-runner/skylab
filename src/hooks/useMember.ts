@@ -45,7 +45,7 @@ const members_2017: Member[] = [
   new Member(
     Grade.CLASS_OF_2017,
     Major.NE,
-    new URL('@/assets/member/王东.jpg', import.meta.url).href,
+    new URL('@/assets/member/王东.png', import.meta.url).href,
     '王东',
     '2019、2020届全国计算机设计大赛国家级三等奖获得者，目前就职百度 Palo数据库团队做的方向 数据库上云管控平台与数据库内核执行器调度器研发。'
   )
@@ -257,13 +257,13 @@ const members_2021: Member[] = [
     '秦梓轩',
     '来自沈阳，性格开朗，幽默，曾获《第四届传智杯全国大学生IT技能大赛全国区域赛三等奖》 《互联网+校级铜奖》等奖项；我喜欢健身，打篮球，打游戏；期待大家加入skylab，彼此共同进步！'
   ),
-    new Member(
-      Grade.CLASS_OF_2021,
-      Major.CS,
-      new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
-      '李俊奕',
-      '喜欢编程、游泳、健身、web3、FPS、动漫，一些莫名其妙奖学金的获得者，蓝桥杯、传智杯、全国大学生电子商务等一些莫名其妙比赛的获奖者。个人技术方向为go开发，对web3非常感兴趣。'
-    )
+  new Member(
+    Grade.CLASS_OF_2021,
+    Major.CS,
+    new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
+    '李俊奕',
+    '喜欢编程、游泳、健身、web3、FPS、动漫，一些莫名其妙奖学金的获得者，蓝桥杯、传智杯、全国大学生电子商务等一些莫名其妙比赛的获奖者。个人技术方向为go开发，对web3非常感兴趣。'
+  )
 ]
 
 const members_2022: Member[] = [
