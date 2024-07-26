@@ -45,9 +45,9 @@ const members_2017: Member[] = [
   new Member(
     Grade.CLASS_OF_2017,
     Major.NE,
-    new URL('@/assets/member/王东.jpg', import.meta.url).href,
+    new URL('@/assets/member/王东2.jpg', import.meta.url).href,
     '王东',
-    '2019、2020届全国计算机设计大赛国家级三等奖获得者，目前于北京东方国信科技股份有限公司从事分布式数据库存储过程执行引擎研发工作。'
+    '2019、2020届全国计算机设计大赛国家级三等奖获得者，目前就职百度 Palo数据库团队做的方向 数据库上云管控平台与数据库内核执行器调度器研发。'
   )
 ]
 
@@ -93,6 +93,13 @@ const members_2018: Member[] = [
     new URL('@/assets/member/梁玥.jpg', import.meta.url).href,
     '梁玥',
     '在竞赛方面：曾获得计算机设计大赛国家级三等奖，蓝桥杯省级二等奖等多项省级奖项。在学习方面：三年智育成绩专业第二，综合测评成绩专业第二，获得2020-2021学年辽宁省政府奖学金，多项校内奖学金，目前保研至东华大学。'
+  )
+  new Member(
+    Grade.CLASS_OF_2018,
+    Major.NE,
+    new URL('@/assets/member/张雨添.jpg', import.meta.url).href,
+    '张雨添',
+    '毕业后在南安普顿大学读研，现在在京东工作，拿过cpcc铜奖。'
   )
 ]
 
