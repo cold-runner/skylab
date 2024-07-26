@@ -256,7 +256,7 @@ const members_2021: Member[] = [
     new URL('@/assets/member/秦梓轩.jpg', import.meta.url).href,
     '秦梓轩',
     '来自沈阳，性格开朗，幽默，曾获《第四届传智杯全国大学生IT技能大赛全国区域赛三等奖》 《互联网+校级铜奖》等奖项；我喜欢健身，打篮球，打游戏；期待大家加入skylab，彼此共同进步！'
-  )
+  ),
     new Member(
       Grade.CLASS_OF_2021,
       Major.CS,
