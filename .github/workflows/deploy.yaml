@@ -1,0 +1,41 @@
+name: CD
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Deps
+        env:
+          UPX_VERSION: ${{ vars.UPX_VERSION }}
+        run: |
+          sudo apt -y install expect
+          wget -O ${{ runner.temp }}/upx.tar.gz \
+            https://github.com/upyun/upx/releases/download/v${UPX_VERSION}/upx_${UPX_VERSION}_linux_amd64.tar.gz
+          tar -xf ${{ runner.temp }}/upx.tar.gz -C ${{ runner.temp }} && sudo mv ${{ runner.temp }}/upx /usr/bin
+      - name: Config upx
+        env:
+          UPX_SERVICE_NAME: ${{ secrets.UPX_SERVICE_NAME }}
+          UPX_OPERATOR: ${{ secrets.UPX_OPERATOR }}
+          UPX_PASSWORD: ${{ secrets.UPX_PASSWORD }}
+        run: |
+          expect -c ' 
+            spawn upx login
+            expect "ServiceName: "
+            send "$env(UPX_SERVICE_NAME)\r"
+            expect "Operator: "
+            send "$env(UPX_OPERATOR)\r"
+            expect "Password: "
+            send "$env(UPX_PASSWORD)\r"
+            expect eof
+            '
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.0.0
+      - name: Generate Static Site
+        run: pnpm run build
+      - name: Upload To upyun
+        run: upx sync -w 10 --delete dist /
