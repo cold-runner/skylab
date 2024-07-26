@@ -93,7 +93,7 @@ const members_2018: Member[] = [
     new URL('@/assets/member/梁玥.jpg', import.meta.url).href,
     '梁玥',
     '在竞赛方面：曾获得计算机设计大赛国家级三等奖，蓝桥杯省级二等奖等多项省级奖项。在学习方面：三年智育成绩专业第二，综合测评成绩专业第二，获得2020-2021学年辽宁省政府奖学金，多项校内奖学金，目前保研至东华大学。'
-  )
+  ),
   new Member(
     Grade.CLASS_OF_2018,
     Major.NE,
