@@ -45,7 +45,7 @@ const members_2017: Member[] = [
   new Member(
     Grade.CLASS_OF_2017,
     Major.NE,
-    new URL('@/assets/member/王东2.jpg', import.meta.url).href,
+    new URL('@/assets/member/王东.jpg', import.meta.url).href,
     '王东',
     '2019、2020届全国计算机设计大赛国家级三等奖获得者，目前就职百度 Palo数据库团队做的方向 数据库上云管控平台与数据库内核执行器调度器研发。'
   )
