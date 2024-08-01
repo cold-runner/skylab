@@ -11,7 +11,7 @@
 			<span>后端：<a href='https://zzzheng.com/' target="_blank">郑赫</a></span>
 		</p>
 		<p>
-			<span>网站贡献者：skyLab 全体成员</span>
+			<span>网站贡献者：SKY工作室 全体成员</span>
 		</p>
 		<p>
 			本网站由
@@ -21,8 +21,11 @@
 			提供 CDN加速 / 云存储服务
 		</p>
 		<p>
-			<span>©{{ new Date().getFullYear() }}</span> | <span>辽宁省沈阳市沈阳师范大学软件学院 skyLab</span> |
-			<span><a href="https://beian.miit.gov.cn/">辽ICP备2021011233号-3</a></span>
+			<span>©{{ new Date().getFullYear() }}</span> | <span>辽宁省沈阳市沈阳师范大学软件学院 SKY工作室</span> |
+			<span>
+				<a href="https://beian.miit.gov.cn/">
+					<img class="upy-logo" src="@/assets/beian-miit.svg" /> 辽ICP备2021011233号-3</a>
+			</span>
 		</p>
 	</footer>
 </template>

@@ -112,12 +112,9 @@ let history = new Date().getFullYear() - 2004
 			<!-- UI设计介绍 -->
 			<div class="ui" style="margin-bottom: 0px">
 				<div class="ui-pic">
-					<div><img src="@/assets/decoration/gz.png" alt="" /></div>
-					<div style="top: 350px; height: 500px">
-						<img src="@/assets/decoration/A2.png" alt="" />
-					</div>
+					<div><img src="@/assets/decoration/A2.png" alt="" /></div>
 				</div>
-				<div class="study-card" style="height: 600px; margin-top: 100px">
+				<div class="study-card" style="height: 600px">
 					<p>
 						③ UI设计：
 						我们身边的诸多事务都离不开UI，无论是我们浏览的APP、网站，还是现实生活中看到的广告海报，又或是游戏中的人物形象，形形色色的Logo。UI设计，即用户界面。负责使用户与产品间有机、高效地结合。好的UI设计不仅是让软件变得有个性有品位，还要让软件的操作变得舒适简单、自由。充分体现软件的定位和特点
@@ -341,15 +338,16 @@ p {
 .ui-pic {
 	position: relative;
 	width: 675px;
-	height: 800px;
-}
+	height: 600px;
 
-.ui-pic div {
-	position: absolute;
-	width: 600px;
-	height: 400px;
-}
+	div {
+		position: absolute;
 
+		img {
+			width: 600px;
+		}
+	}
+}
 
 .study-card:hover {
 	box-shadow: 1px 1px 10px black;
