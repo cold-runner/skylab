@@ -180,6 +180,7 @@ const members_2020: Member[] = [
 ]
 
 const members_2021: Member[] = [
+
   new Member(
     Grade.CLASS_OF_2021,
     Major.SE,
@@ -200,6 +201,13 @@ const members_2021: Member[] = [
     new URL('@/assets/member/刘晏榕.jpg', import.meta.url).href,
     '刘晏榕',
     '目前选择前端方向，也有点健忘，大一学年商务分析专业方向智育第二，综测第二，曾获“创新创意及创业挑战赛”校级二等奖，“传智杯全国大学生IT技能大赛”全国区域赛三等奖，没有天赋异禀，所以愿意努力翻山越岭。有点社恐，但乐意为新的一轮月亮和日落欢呼。'
+  ),
+  new Member(
+    Grade.CLASS_OF_2021,
+    Major.CS,
+    new URL('@/assets/member/李俊奕.jpg', import.meta.url).href,
+    '李俊奕',
+    '爱好甚广，特长甚少。在校期间拿过一些省奖，大四在科大讯飞研究院做大模型交互方向的实习，非常怀念在skylab的日子，再选一万次，我依然会加入skylab。'
   ),
   new Member(
     Grade.CLASS_OF_2021,
